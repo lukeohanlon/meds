@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_08_11_180334) do
+ActiveRecord::Schema[7.0].define(version: 2023_08_10_120626) do
   create_table "medications", force: :cascade do |t|
     t.string "generic_name"
     t.text "dosage_text"
@@ -25,7 +25,7 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_11_180334) do
     t.date "reminder_date"
     t.time "reminder_time"
     t.string "dose"
-    t.string "recurring_interval"
+    t.integer "recurring_interval"
   end
 
   create_table "reminders", force: :cascade do |t|
