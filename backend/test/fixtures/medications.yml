@@ -8,6 +8,11 @@ one:
   active_substance: MyString
   route: MyString
   dosage_amount: MyString
+  purpose: MyString
+  reminder_date: 2023-08-11
+  reminder_time: 2023-08-11 19:58:34
+  dose: MyString
+  recurring_interval: MyString
 
 two:
   generic_name: MyString
@@ -17,3 +22,8 @@ two:
   active_substance: MyString
   route: MyString
   dosage_amount: MyString
+  purpose: MyString
+  reminder_date: 2023-08-11
+  reminder_time: 2023-08-11 19:58:34
+  dose: MyString
+  recurring_interval: MyString

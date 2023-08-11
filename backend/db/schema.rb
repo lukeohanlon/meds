@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2023_08_10_120626) do
+ActiveRecord::Schema[7.0].define(version: 2023_08_11_195843) do
   create_table "medications", force: :cascade do |t|
     t.string "generic_name"
     t.text "dosage_text"
@@ -19,13 +19,13 @@ ActiveRecord::Schema[7.0].define(version: 2023_08_10_120626) do
     t.string "active_substance"
     t.string "route"
     t.string "dosage_amount"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
     t.string "purpose"
     t.date "reminder_date"
     t.time "reminder_time"
     t.string "dose"
-    t.integer "recurring_interval"
+    t.string "recurring_interval"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "reminders", force: :cascade do |t|
